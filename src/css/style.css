@@ -96,7 +96,7 @@ body {
 /* Container */
 
 .container {
-    padding-top: 140px;
+    padding-top: 100px;
     padding-bottom: 70px;
     height: 447px;
 }
@@ -159,7 +159,6 @@ body {
     align-items: center;
     border-radius: 5px;
     font-size: 12px;
-    /* Falta ajustar o texto dessa pra ficar igual o figma*/
     box-sizing: border-box;
     padding-right: 10px;
     padding-left: 10px;
@@ -258,16 +257,86 @@ body {
 
 /* Footer */
 
-.footer {
+.footer1 {
     height: 70px;
     width: 100%;
     background-color:#FFFFFF;
     display: flex;
-    flex-direction: center;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: absolute;
     bottom: 0;
     left: 0;
-    font-size: 22px;
+    font-size: 18px;
+}
+
+.footer2 {
+    height: 70px;
+    width: 100%;
+    background-color:#FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+.footer3 {
+    height: 170px;
+    width: 100%;
+    background-color:#FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.orange{
+    height: 20px;
+    width: 20px;
+    color: #FF922E;
+}
+
+.red{
+    height: 20px;
+    width: 20px;
+    color: #FF3030;
+}
+
+.green{
+    height: 30px;
+    width: 30px;
+    color: #2FBE34;
+}
+
+.footer3 h1{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.footer3 h2{
+    font-size: 18px;
+    font-weight: 400;
+    width: 230px;
+    text-align: center;
+    margin: 0px;
+}
+
+.footer3 h3{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px;
 }
