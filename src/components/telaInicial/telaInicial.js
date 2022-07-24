@@ -1,0 +1,24 @@
+import React from "react";
+import img from "./logo.png";
+import TelaRecall from "../telaRecall/telaRecall"
+
+export default function TelaInicial({tela}){
+
+    const [tela2, setTela2] = React.useState(tela);
+
+    if (tela2==="inicio"){
+        return (
+            <div className="telaInicial">
+                <img src={img} alt=""/>
+                <h1>ZapRecall</h1>
+                <div className="start" onClick={() => setTela2("recall")} >
+                    Iniciar Recall!
+                </div>
+            </div>
+        )
+    } else if (tela2==="recall"){
+        return (
+            <TelaRecall />
+        )
+    }
+}

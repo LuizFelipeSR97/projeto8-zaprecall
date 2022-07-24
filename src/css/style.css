@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Recursive', sans-serif;
+}
+
+/*Tela Inicial*/
+
+.telaInicial{
+    background-color: #FB6B6B;
+    height: 100%;
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.telaInicial img {
+    width: 136px;
+    height: 161px;
+    margin-top: 145px;
+}
+
+.telaInicial h1 {
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Righteous', cursive;
+    margin: 20px auto 35px auto;
+}
+
+.start {
+    background-color: #FFFFFF;
+    height: 54px;
+    width: 246px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #D70900;
+    border-radius: 5px;
+    margin-bottom: 200px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Tela Recall */
+
+.telaRecall {
+    background-color: #FB6B6B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 667px;
+    width: 375px;
+    position: relative;
+}
+
+/* Header */
+
+.header {
+    height: 137px;
+    width: 100%;
+    color: #FFFFFF;
+    font-family: 'Righteous', cursive;
+    font-size: 36px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    margin-bottom: 5px;
+}
+
+.header img {
+    width: 52px;
+    height: 60px;;
+}
+
+.header h1 {
+    font-family: 'Righteous', cursive;
+}
+
+/* Container */
+
+.container {
+    padding-top: 140px;
+    padding-bottom: 70px;
+    height: 447px;
+}
+
+.container .pergunta2 {
+    height: 130px;
+    width: 300px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    background-color: #FFFFD4;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+}
+
+.container .pergunta2 .cima{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.container .pergunta2 .baixo{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.container .pergunta2 h1 {
+    font-size: 18px;
+    margin: 15px 15px;
+    font-weight: 400;
+}
+
+.container .pergunta2 img {
+    height: 20px;
+    width: 30px;
+    margin: auto 15px 5px auto;
+    cursor: pointer;
+}
+
+.container .pergunta2 .baixo2{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container .pergunta2 .acaoResp1{
+    background-color: #FF3030;
+    color: #FFFFFF;
+    height: 37px;
+    width: 85px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 12px;
+    /* Falta ajustar o texto dessa pra ficar igual o figma*/
+    box-sizing: border-box;
+    padding-right: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.container .pergunta2 .acaoResp2{
+    background-color: #FF922E;
+    color: #FFFFFF;
+    height: 37px;
+    width: 85px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.container .pergunta2 .acaoResp3{
+    background-color: #2FBE34;
+    color: #FFFFFF;
+    height: 37px;
+    width: 85px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.container .pergunta1 {
+    height: 65px;
+    width: 300px;
+    margin-top: 25px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+
+}
+
+.container .pergunta1 h1 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+.container .perguntaResp1{
+    color: #FF3030;
+    text-decoration: line-through;
+    cursor: default;
+}
+
+.container .perguntaResp2{
+    color: #FF922E;
+    text-decoration: line-through;
+}
+
+.container .perguntaResp3{
+    color: #2FBE34;
+    text-decoration: line-through;
+}
+
+.container .pergunta1 ion-icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.container .perguntaResp1 ion-icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+    cursor: default;
+}
+
+.container .perguntaResp2 ion-icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+    cursor: default;
+}
+
+.container .perguntaResp3 ion-icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+    cursor: default;
+}
+
+/* Footer */
+
+.footer {
+    height: 70px;
+    width: 100%;
+    background-color:#FFFFFF;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 22px;
+}
