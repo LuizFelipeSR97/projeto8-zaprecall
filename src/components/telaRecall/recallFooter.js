@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function RecallFooter({cont}){
+export default function RecallFooter({cont, setCont, simbolos, setSimbolos}){
 
     const [tituloTextoResposta,setTituloTextoResposta] = React.useState("Putz...")
     const [textoResposta,setTextoResposta] = React.useState("Ainda faltam alguns... Mas não desanime!")
@@ -32,12 +32,14 @@ export default function RecallFooter({cont}){
             <div className="footer2">
                 {cont}/4 CONCLUIDOS 
                 <div className="ordemResp">
-                    {simbolos2}
+                {simbolos}
                 </div>
             </div>
         )
     } else {
+
         return (
+
             <div className="footer3">
                 
                 <h1>{tituloTextoResposta}</h1>
@@ -45,7 +47,7 @@ export default function RecallFooter({cont}){
                 <h3>{cont}/4 CONCLUIDOS </h3>
                 
                 <div className="ordemResp">
-                    {simbolos2}
+                    <>{simbolos}</>
                 </div>
             </div>
         )

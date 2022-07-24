@@ -1,5 +1,18 @@
 import Pergunta from './pergunta'
 
+export default function RecallContainer({cont, setCont, simbolos, setSimbolos}){
+    
+    return (
+        <div className="container">
+            <Pergunta tela="1" title='Pergunta 1' pergunta={deckPrincipal[0].pergunta} resp={deckPrincipal[0].resp} cont={cont} setCont={setCont} simbolos={simbolos} setSimbolos={setSimbolos}/>
+            <Pergunta tela="1" title='Pergunta 2' pergunta={deckPrincipal[1].pergunta} resp={deckPrincipal[1].resp} cont={cont} setCont={setCont} simbolos={simbolos} setSimbolos={setSimbolos}/>
+            <Pergunta tela="1" title='Pergunta 3' pergunta={deckPrincipal[2].pergunta} resp={deckPrincipal[2].resp} cont={cont} setCont={setCont} simbolos={simbolos} setSimbolos={setSimbolos}/>
+            <Pergunta tela="1" title='Pergunta 4' pergunta={deckPrincipal[3].pergunta} resp={deckPrincipal[3].resp} cont={cont} setCont={setCont} simbolos={simbolos} setSimbolos={setSimbolos}/>
+        </div>
+    )
+}
+
+
 const deckPrincipal=[
     {pergunta:"O que é JSX?", resp:"Uma extensão de linguagem do JavaScript"},
     {pergunta:"O React é...?", resp:"uma biblioteca JavaScript para construção de interfaces"},
@@ -10,18 +23,6 @@ const deckPrincipal=[
     {pergunta:"Usamos props para...?", resp:"Passar diferentes informações para componentes"},
     {pergunta:" Usamos estado (state) para...?", resp:"Dizer para o React quais informações quando atualizadas devem renderizar a tela novamente"}
 ]
-
-export default function RecallContainer(){
-    
-    return (
-        <div className="container">
-            <Pergunta tela="1" title='Pergunta 1' pergunta={deckPrincipal[0].pergunta} resp={deckPrincipal[0].resp}/>
-            <Pergunta tela="1" title='Pergunta 2' pergunta={deckPrincipal[1].pergunta} resp={deckPrincipal[1].resp}/>
-            <Pergunta tela="1" title='Pergunta 3' pergunta={deckPrincipal[2].pergunta} resp={deckPrincipal[2].resp}/>
-            <Pergunta tela="1" title='Pergunta 4' pergunta={deckPrincipal[3].pergunta} resp={deckPrincipal[3].resp}/>
-        </div>
-    )
-}
 
 function misturarDeck(arr){
     for (let i = arr.length - 1; i > 0; i--) {

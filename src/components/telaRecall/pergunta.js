@@ -1,11 +1,10 @@
 import setinha from "./setinha.png";
 import React from "react";
 
-export default function Pergunta({tela, pergunta, resp, title}){
+export default function Pergunta({tela, pergunta, resp, title, cont, setCont, simbolos, setSimbolos}){
 
     const [faseCard, setFaseCard] = React.useState(tela)
     const [classe, setClasse] = React.useState("pergunta1")
-    const [contPergunta, setContPergunta] = React.useState(0)
 
     if (faseCard==="1"){
         if (classe==="pergunta1"){
@@ -56,9 +55,9 @@ export default function Pergunta({tela, pergunta, resp, title}){
                     <h1>{resp}</h1>
                 </div>
                 <div className="baixo2">
-                    <div className="acaoResp1" onClick={()=>{setFaseCard("1");setClasse("pergunta1 perguntaResp1");setContPergunta({contPergunta}+1)}}>Não lembrei</div>
-                    <div className="acaoResp2" onClick={()=>{setFaseCard("1");setClasse("pergunta1 perguntaResp2");setContPergunta({contPergunta}+1)}}>Quase não lembrei</div>
-                    <div className="acaoResp3" onClick={()=>{setFaseCard("1");setClasse("pergunta1 perguntaResp3");setContPergunta({contPergunta}+1)}}>Zap!</div>
+                    <div className="acaoResp1" onClick={()=>{setFaseCard("1");setClasse("pergunta1 perguntaResp1");setCont(cont+1);setSimbolos(simbolos+"A")}}>Não lembrei</div>
+                    <div className="acaoResp2" onClick={()=>{setFaseCard("1");setClasse("pergunta1 perguntaResp2");setCont(cont+1);setSimbolos(simbolos+"B")}}>Quase não lembrei</div>
+                    <div className="acaoResp3" onClick={()=>{setFaseCard("1");setClasse("pergunta1 perguntaResp3");setCont(cont+1);setSimbolos(simbolos+"C")}}>Zap!</div>
                 </div>
             </div>
         )

@@ -5,6 +5,8 @@ import TelaRecall from "../telaRecall/telaRecall"
 export default function TelaInicial({tela}){
 
     const [tela2, setTela2] = React.useState(tela);
+    const [cont, setCont] = React.useState(0);
+    const [simbolos, setSimbolos] = React.useState("")
 
     if (tela2==="inicio"){
         return (
@@ -18,7 +20,7 @@ export default function TelaInicial({tela}){
         )
     } else if (tela2==="recall"){
         return (
-            <TelaRecall />
+            <TelaRecall cont={cont} setCont={setCont} simbolos={simbolos} setSimbolos={setSimbolos}/>
         )
     }
 }
