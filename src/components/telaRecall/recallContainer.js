@@ -1,13 +1,14 @@
 import Pergunta from './pergunta'
 
-export default function RecallContainer({cont, setCont, simbolos, setSimbolos}){
-    
+export default function RecallContainer({cont, setCont, simbolos, setSimbolos, arraySimbolos, setArraySimbolos, arrayCorSimbolos, setArrayCorSimbolos}){
+
     return (
+        
         <div className="container">
-            <Pergunta tela="1" title='Pergunta 1' pergunta={deckPrincipal[0].pergunta} resp={deckPrincipal[0].resp} cont={cont} setCont={setCont} simbolos={simbolos} setSimbolos={setSimbolos}/>
-            <Pergunta tela="1" title='Pergunta 2' pergunta={deckPrincipal[1].pergunta} resp={deckPrincipal[1].resp} cont={cont} setCont={setCont} simbolos={simbolos} setSimbolos={setSimbolos}/>
-            <Pergunta tela="1" title='Pergunta 3' pergunta={deckPrincipal[2].pergunta} resp={deckPrincipal[2].resp} cont={cont} setCont={setCont} simbolos={simbolos} setSimbolos={setSimbolos}/>
-            <Pergunta tela="1" title='Pergunta 4' pergunta={deckPrincipal[3].pergunta} resp={deckPrincipal[3].resp} cont={cont} setCont={setCont} simbolos={simbolos} setSimbolos={setSimbolos}/>
+            <Pergunta tela="1" title='Pergunta 1' pergunta={deckPrincipal[0].pergunta} resp={deckPrincipal[0].resp} cont={cont} setCont={setCont} simbolos={simbolos} setSimbolos={setSimbolos} arraySimbolos={arraySimbolos} setArraySimbolos={setArraySimbolos} arrayCorSimbolos={arrayCorSimbolos} setArrayCorSimbolos={setArrayCorSimbolos}/>
+            <Pergunta tela="1" title='Pergunta 2' pergunta={deckPrincipal[1].pergunta} resp={deckPrincipal[1].resp} cont={cont} setCont={setCont} simbolos={simbolos} setSimbolos={setSimbolos} arraySimbolos={arraySimbolos} setArraySimbolos={setArraySimbolos} arrayCorSimbolos={arrayCorSimbolos} setArrayCorSimbolos={setArrayCorSimbolos}/>
+            <Pergunta tela="1" title='Pergunta 3' pergunta={deckPrincipal[2].pergunta} resp={deckPrincipal[2].resp} cont={cont} setCont={setCont} simbolos={simbolos} setSimbolos={setSimbolos} arraySimbolos={arraySimbolos} setArraySimbolos={setArraySimbolos} arrayCorSimbolos={arrayCorSimbolos} setArrayCorSimbolos={setArrayCorSimbolos}/>
+            <Pergunta tela="1" title='Pergunta 4' pergunta={deckPrincipal[3].pergunta} resp={deckPrincipal[3].resp} cont={cont} setCont={setCont} simbolos={simbolos} setSimbolos={setSimbolos} arraySimbolos={arraySimbolos} setArraySimbolos={setArraySimbolos} arrayCorSimbolos={arrayCorSimbolos} setArrayCorSimbolos={setArrayCorSimbolos}/>
         </div>
     )
 }

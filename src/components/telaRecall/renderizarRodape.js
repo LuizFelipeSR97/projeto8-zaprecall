@@ -1,17 +1,25 @@
-export default function RenderFooter(str){
-    // for (let i=0; i<str.length; i++){
-    //     if (str[i]==="C"){
-    //         return (
-    //             <ion-icon name="checkmark-circle" class="md hydrated green"></ion-icon>
-    //         )
-    //     } else if (str[i]==="B"){
-    //         return (
-    //             <ion-icon name="help-circle" class="md hydrated orange"></ion-icon>
-    //         )
-    //     } else if (str[i]==="A"){
-    //         return (
-    //             <ion-icon name="close-circle" class="md hydrated red"></ion-icon>
-    //         )
-    //     }
-    // }
+export default function RenderFooter({arraySimbolos, arrayCorSimbolos}){
+    const objeto={}
+    const array=[]
+    console.log(arrayCorSimbolos)
+    console.log(arraySimbolos)
+     return (
+         <div className="ordemResp">
+         {arraySimbolos.map(simbolo => <div><ion-icon name={simbolo} class="md hydrated"></ion-icon></div>)}
+         </div>
+     )
 }
+
+// export default function RenderFooter({arraySimbolos, arrayCorSimbolos}){
+//     const simbolos = arraySimbolos
+//     const corSimbolos = arrayCorSimbolos
+//     console.log(corSimbolos)
+//     console.log(simbolos)
+//     return (
+//         <>
+//         {simbolos.map(simbolo => <div><ion-icon name={simbolo} class="md hydrated red"></ion-icon></div>)}
+//         </>
+//     )
+// }
+
+//Tentar fazer sem ser pelo map, com for e mudando a cor na classe de acordo com o nome
