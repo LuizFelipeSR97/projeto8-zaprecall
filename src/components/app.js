@@ -5,11 +5,3 @@ export default function App(){
         <TelaInicial tela="inicio"/>
     )
 }
-
-/* 
-TELAS DISPONIVEIS:
-
-TELA 1: TELA INICIAL
-TELA 2: TELA RECALL
-
-*/

@@ -63,3 +63,5 @@ export default function Pergunta({tela, pergunta, resp, title, cont, setCont, si
         )
     }
 }
+
+//Tentar fazer cada emoji como um obj dentro de uma array e criar uma funcao pra renderizar em sequencia os objetos

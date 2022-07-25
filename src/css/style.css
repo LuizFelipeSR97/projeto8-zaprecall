@@ -340,3 +340,9 @@ body {
     font-weight: 400;
     margin: 10px;
 }
+
+.footer3 .titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
